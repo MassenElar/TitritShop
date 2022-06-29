@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B7A6012286A417400AB5095 /* TitritShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6011286A417400AB5095 /* TitritShopApp.swift */; };
+		8B7A6014286A417400AB5095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6013286A417400AB5095 /* ContentView.swift */; };
+		8B7A6016286A417400AB5095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A6015286A417400AB5095 /* Assets.xcassets */; };
+		8B7A6019286A417400AB5095 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A6018286A417400AB5095 /* Preview Assets.xcassets */; };
+		8B7A6021286A484600AB5095 /* MakeUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6020286A484600AB5095 /* MakeUpData.swift */; };
+		8B7A6024286A4A2500AB5095 /* AnySource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6023286A4A2500AB5095 /* AnySource.swift */; };
+		8B7A6026286A530500AB5095 /* NetworkingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6025286A530500AB5095 /* NetworkingRequest.swift */; };
+		8B7A6028286A5CCF00AB5095 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6027286A5CCF00AB5095 /* ImageRequest.swift */; };
+		8B7A602A286A615800AB5095 /* ModelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6029286A615800AB5095 /* ModelRequest.swift */; };
+		8B7A602C286A62B500AB5095 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A602B286A62B500AB5095 /* NetworkingError.swift */; };
+		8B7A6030286A899C00AB5095 /* ProductResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A602F286A899C00AB5095 /* ProductResource.swift */; };
+		8B7A6032286A89AE00AB5095 /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6031286A89AE00AB5095 /* ProductRequest.swift */; };
+		8B7A6035286A9C7F00AB5095 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6034286A9C7F00AB5095 /* ProductCard.swift */; };
+		8B7A6039286A9D3100AB5095 /* ImageCach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6038286A9D3100AB5095 /* ImageCach.swift */; };
+		8B7A603D286B775700AB5095 /* cartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A603C286B775700AB5095 /* cartButton.swift */; };
+		8B7A603F286B837800AB5095 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A603E286B837800AB5095 /* CartView.swift */; };
+		8B7A6042286B9DCF00AB5095 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6041286B9DCF00AB5095 /* CartViewModel.swift */; };
+		8B90E469286BA7D7006B371E /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90E468286BA7D7006B371E /* ProductRow.swift */; };
+		8B90E46D286C06DD006B371E /* PayementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90E46C286C06DD006B371E /* PayementButton.swift */; };
+		8B90E46F286CC0BD006B371E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B90E46E286CC0BD006B371E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B7A600E286A417400AB5095 /* Titrit Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Titrit Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7A6011286A417400AB5095 /* TitritShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitritShopApp.swift; sourceTree = "<group>"; };
+		8B7A6013286A417400AB5095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B7A6015286A417400AB5095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B7A6018286A417400AB5095 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B7A6020286A484600AB5095 /* MakeUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUpData.swift; sourceTree = "<group>"; };
+		8B7A6023286A4A2500AB5095 /* AnySource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySource.swift; sourceTree = "<group>"; };
+		8B7A6025286A530500AB5095 /* NetworkingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingRequest.swift; sourceTree = "<group>"; };
+		8B7A6027286A5CCF00AB5095 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		8B7A6029286A615800AB5095 /* ModelRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRequest.swift; sourceTree = "<group>"; };
+		8B7A602B286A62B500AB5095 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		8B7A602F286A899C00AB5095 /* ProductResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResource.swift; sourceTree = "<group>"; };
+		8B7A6031286A89AE00AB5095 /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
+		8B7A6034286A9C7F00AB5095 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		8B7A6038286A9D3100AB5095 /* ImageCach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCach.swift; sourceTree = "<group>"; };
+		8B7A603C286B775700AB5095 /* cartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartButton.swift; sourceTree = "<group>"; };
+		8B7A603E286B837800AB5095 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		8B7A6041286B9DCF00AB5095 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		8B90E468286BA7D7006B371E /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		8B90E46C286C06DD006B371E /* PayementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayementButton.swift; sourceTree = "<group>"; };
+		8B90E46E286CC0BD006B371E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B7A600B286A417400AB5095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B7A6005286A417400AB5095 = {
+			isa = PBXGroup;
+			children = (
+				8B7A6010286A417400AB5095 /* TitritShop */,
+				8B7A600F286A417400AB5095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B7A600F286A417400AB5095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A600E286A417400AB5095 /* Titrit Shop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B7A6010286A417400AB5095 /* TitritShop */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6040286B9DB700AB5095 /* ViewModel */,
+				8B7A6036286A9CA400AB5095 /* Supporting files */,
+				8B7A6033286A9C3200AB5095 /* views */,
+				8B7A6022286A49F100AB5095 /* Networking */,
+				8B7A601F286A482900AB5095 /* Models */,
+				8B7A6017286A417400AB5095 /* Preview Content */,
+			);
+			path = TitritShop;
+			sourceTree = "<group>";
+		};
+		8B7A6017286A417400AB5095 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6018286A417400AB5095 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B7A601F286A482900AB5095 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6020286A484600AB5095 /* MakeUpData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B7A6022286A49F100AB5095 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A602E286A631B00AB5095 /* Requests */,
+				8B7A6023286A4A2500AB5095 /* AnySource.swift */,
+				8B7A6025286A530500AB5095 /* NetworkingRequest.swift */,
+				8B7A6027286A5CCF00AB5095 /* ImageRequest.swift */,
+				8B7A6029286A615800AB5095 /* ModelRequest.swift */,
+				8B7A602B286A62B500AB5095 /* NetworkingError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8B7A602E286A631B00AB5095 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A602F286A899C00AB5095 /* ProductResource.swift */,
+				8B7A6031286A89AE00AB5095 /* ProductRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		8B7A6033286A9C3200AB5095 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6011286A417400AB5095 /* TitritShopApp.swift */,
+				8B7A6013286A417400AB5095 /* ContentView.swift */,
+				8B7A6037286A9D0600AB5095 /* Components */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		8B7A6036286A9CA400AB5095 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6015286A417400AB5095 /* Assets.xcassets */,
+				8B7A6038286A9D3100AB5095 /* ImageCach.swift */,
+				8B90E46E286CC0BD006B371E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8B7A6037286A9D0600AB5095 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6034286A9C7F00AB5095 /* ProductCard.swift */,
+				8B7A603C286B775700AB5095 /* cartButton.swift */,
+				8B7A603E286B837800AB5095 /* CartView.swift */,
+				8B90E468286BA7D7006B371E /* ProductRow.swift */,
+				8B90E46C286C06DD006B371E /* PayementButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8B7A6040286B9DB700AB5095 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A6041286B9DCF00AB5095 /* CartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B7A600D286A417400AB5095 /* TitritShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B7A601C286A417400AB5095 /* Build configuration list for PBXNativeTarget "TitritShop" */;
+			buildPhases = (
+				8B7A600A286A417400AB5095 /* Sources */,
+				8B7A600B286A417400AB5095 /* Frameworks */,
+				8B7A600C286A417400AB5095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TitritShop;
+			productName = TitritShop;
+			productReference = 8B7A600E286A417400AB5095 /* Titrit Shop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B7A6006286A417400AB5095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					8B7A600D286A417400AB5095 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8B7A6009286A417400AB5095 /* Build configuration list for PBXProject "TitritShop" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B7A6005286A417400AB5095;
+			productRefGroup = 8B7A600F286A417400AB5095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B7A600D286A417400AB5095 /* TitritShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B7A600C286A417400AB5095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B90E46F286CC0BD006B371E /* LaunchScreen.storyboard in Resources */,
+				8B7A6019286A417400AB5095 /* Preview Assets.xcassets in Resources */,
+				8B7A6016286A417400AB5095 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B7A600A286A417400AB5095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7A6024286A4A2500AB5095 /* AnySource.swift in Sources */,
+				8B7A603D286B775700AB5095 /* cartButton.swift in Sources */,
+				8B7A6028286A5CCF00AB5095 /* ImageRequest.swift in Sources */,
+				8B7A602C286A62B500AB5095 /* NetworkingError.swift in Sources */,
+				8B90E469286BA7D7006B371E /* ProductRow.swift in Sources */,
+				8B7A6021286A484600AB5095 /* MakeUpData.swift in Sources */,
+				8B90E46D286C06DD006B371E /* PayementButton.swift in Sources */,
+				8B7A6026286A530500AB5095 /* NetworkingRequest.swift in Sources */,
+				8B7A6042286B9DCF00AB5095 /* CartViewModel.swift in Sources */,
+				8B7A6014286A417400AB5095 /* ContentView.swift in Sources */,
+				8B7A6035286A9C7F00AB5095 /* ProductCard.swift in Sources */,
+				8B7A603F286B837800AB5095 /* CartView.swift in Sources */,
+				8B7A6030286A899C00AB5095 /* ProductResource.swift in Sources */,
+				8B7A6039286A9D3100AB5095 /* ImageCach.swift in Sources */,
+				8B7A6032286A89AE00AB5095 /* ProductRequest.swift in Sources */,
+				8B7A6012286A417400AB5095 /* TitritShopApp.swift in Sources */,
+				8B7A602A286A615800AB5095 /* ModelRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8B7A601A286A417400AB5095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B7A601B286A417400AB5095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B7A601D286A417400AB5095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TitritShop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elar.TitritShop;
+				PRODUCT_NAME = "Titrit Shop";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B7A601E286A417400AB5095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TitritShop/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elar.TitritShop;
+				PRODUCT_NAME = "Titrit Shop";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B7A6009286A417400AB5095 /* Build configuration list for PBXProject "TitritShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7A601A286A417400AB5095 /* Debug */,
+				8B7A601B286A417400AB5095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B7A601C286A417400AB5095 /* Build configuration list for PBXNativeTarget "TitritShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7A601D286A417400AB5095 /* Debug */,
+				8B7A601E286A417400AB5095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B7A6006286A417400AB5095 /* Project object */;
+}
