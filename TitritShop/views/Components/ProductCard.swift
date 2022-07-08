@@ -44,7 +44,8 @@ struct ProductCard: View {
             .shadow(radius: 3)
             
             Button {
-                cartViewModel.addToCart(product: product)
+                cartViewModel.addToCart(product: CartItems(cartItem: product, quantity: 1, price: product.price ?? ""))
+                cartViewModel.totalQuantity()
                 print("added to cart")
             } label: {
                 Image(systemName: "plus")

@@ -9,27 +9,30 @@ import SwiftUI
 
 struct CartView: View {
     
-    @EnvironmentObject var carViewModel: CartViewModel
-    
+    @EnvironmentObject var cartViewModel: CartViewModel
+
     @State private var showingAlert = false
     
     @State private var disButt = false
     
+    @State private var ikhan = CartViewModel().Total
+
     var body: some View {
         ScrollView {
-            if carViewModel.products.count == 0 {
+            if cartViewModel.products.count == 0 {
                 Text("Cart is Empty")
             } else {
 
-                ForEach(carViewModel.products, id: \.id) { product in 
+                ForEach(cartViewModel.products, id: \.id) { product in
                     ProductRow(product: product)
                 }
+                
                 HStack {
                     Text("Your Total is:")
                         .bold()
                         .foregroundColor(.red)
                     Spacer()
-                    Text(String(format: "%.2f", carViewModel.Total))
+                    Text(String(format: "%.2f", cartViewModel.products.reduce(0, {$0 + ((Double($1.price) ?? 0) * Double($1.Quantity))})))
                         .bold()
                         .foregroundColor(.red)
                 }
@@ -38,10 +41,12 @@ struct CartView: View {
             
             PayementButton(action: {
                 showingAlert = true
-                carViewModel.removeAllProducts()
+                cartViewModel.removeAllProducts()
+                cartViewModel.Total = 0
+                cartViewModel.totalQuantity()
                     
             })
-            .hiddenConditionally(isHidden: carViewModel.products.count == 0)
+            .hiddenConditionally(isHidden: cartViewModel.products.count == 0)
             .alert(isPresented: self.$showingAlert, content: {
                 Alert(title: Text("Payment Recieved Successfully"), dismissButton: .cancel())
             })
@@ -50,6 +55,7 @@ struct CartView: View {
         .navigationTitle("My Cart")
         .padding(.top)
     }
+    
 }
 
 extension View {

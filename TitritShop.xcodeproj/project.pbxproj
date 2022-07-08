@@ -83,11 +83,11 @@
 		8B7A6010286A417400AB5095 /* TitritShop */ = {
 			isa = PBXGroup;
 			children = (
-				8B7A6040286B9DB700AB5095 /* ViewModel */,
 				8B7A6036286A9CA400AB5095 /* Supporting files */,
-				8B7A6033286A9C3200AB5095 /* views */,
 				8B7A6022286A49F100AB5095 /* Networking */,
 				8B7A601F286A482900AB5095 /* Models */,
+				8B7A6040286B9DB700AB5095 /* ViewModel */,
+				8B7A6033286A9C3200AB5095 /* views */,
 				8B7A6017286A417400AB5095 /* Preview Content */,
 			);
 			path = TitritShop;

@@ -13,6 +13,8 @@ struct ContentView: View {
     
     @StateObject var carViewModel = CartViewModel()
     
+    var quantity: Int = 0
+    
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
     var body: some View {
@@ -43,9 +45,11 @@ struct ContentView: View {
                         CartView()
                             .environmentObject(carViewModel)
                     } label: {
-                        cartButton(numberOfItems: carViewModel.products.count)
-
+                        cartButton()
+                            .environmentObject(carViewModel)
                     }
+                    
+                    
                 }
             
         }
