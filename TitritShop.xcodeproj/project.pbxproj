@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B4BBFEA2881FA4C0022C96D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4BBFE92881FA4C0022C96D /* AuthViewModel.swift */; };
+		8B4BBFEC28822FE00022C96D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4BBFEB28822FE00022C96D /* ProfileView.swift */; };
 		8B7A6012286A417400AB5095 /* TitritShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6011286A417400AB5095 /* TitritShopApp.swift */; };
 		8B7A6014286A417400AB5095 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A6013286A417400AB5095 /* ContentView.swift */; };
 		8B7A6016286A417400AB5095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7A6015286A417400AB5095 /* Assets.xcassets */; };
@@ -27,9 +29,18 @@
 		8B90E469286BA7D7006B371E /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90E468286BA7D7006B371E /* ProductRow.swift */; };
 		8B90E46D286C06DD006B371E /* PayementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B90E46C286C06DD006B371E /* PayementButton.swift */; };
 		8B90E46F286CC0BD006B371E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B90E46E286CC0BD006B371E /* LaunchScreen.storyboard */; };
+		8BAC939E287DF6E0005A9253 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC939D287DF6E0005A9253 /* RegisterView.swift */; };
+		8BAC93A0287E13D2005A9253 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC939F287E13D2005A9253 /* SignInView.swift */; };
+		8BAC93A52880AC52005A9253 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAC93A42880AC52005A9253 /* FirebaseAuth */; };
+		8BAC93A72880AC52005A9253 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAC93A62880AC52005A9253 /* FirebaseDatabase */; };
+		8BAC93A92880AC52005A9253 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAC93A82880AC52005A9253 /* FirebaseDatabaseSwift */; };
+		8BAC93AB2880AC52005A9253 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8BAC93AA2880AC52005A9253 /* FirebaseStorage */; };
+		8BAC93AF2880B30E005A9253 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BAC93AE2880B30E005A9253 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B4BBFE92881FA4C0022C96D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		8B4BBFEB28822FE00022C96D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8B7A600E286A417400AB5095 /* Titrit Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Titrit Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7A6011286A417400AB5095 /* TitritShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitritShopApp.swift; sourceTree = "<group>"; };
 		8B7A6013286A417400AB5095 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +62,9 @@
 		8B90E468286BA7D7006B371E /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		8B90E46C286C06DD006B371E /* PayementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayementButton.swift; sourceTree = "<group>"; };
 		8B90E46E286CC0BD006B371E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BAC939D287DF6E0005A9253 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		8BAC939F287E13D2005A9253 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		8BAC93AE2880B30E005A9253 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BAC93A92880AC52005A9253 /* FirebaseDatabaseSwift in Frameworks */,
+				8BAC93AB2880AC52005A9253 /* FirebaseStorage in Frameworks */,
+				8BAC93A72880AC52005A9253 /* FirebaseDatabase in Frameworks */,
+				8BAC93A52880AC52005A9253 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,7 @@
 		8B7A6010286A417400AB5095 /* TitritShop */ = {
 			isa = PBXGroup;
 			children = (
+				8BAC93AE2880B30E005A9253 /* GoogleService-Info.plist */,
 				8B7A6036286A9CA400AB5095 /* Supporting files */,
 				8B7A6022286A49F100AB5095 /* Networking */,
 				8B7A601F286A482900AB5095 /* Models */,
@@ -159,6 +178,9 @@
 				8B7A603E286B837800AB5095 /* CartView.swift */,
 				8B90E468286BA7D7006B371E /* ProductRow.swift */,
 				8B90E46C286C06DD006B371E /* PayementButton.swift */,
+				8BAC939D287DF6E0005A9253 /* RegisterView.swift */,
+				8BAC939F287E13D2005A9253 /* SignInView.swift */,
+				8B4BBFEB28822FE00022C96D /* ProfileView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -167,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				8B7A6041286B9DCF00AB5095 /* CartViewModel.swift */,
+				8B4BBFE92881FA4C0022C96D /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,6 +210,12 @@
 			dependencies = (
 			);
 			name = TitritShop;
+			packageProductDependencies = (
+				8BAC93A42880AC52005A9253 /* FirebaseAuth */,
+				8BAC93A62880AC52005A9253 /* FirebaseDatabase */,
+				8BAC93A82880AC52005A9253 /* FirebaseDatabaseSwift */,
+				8BAC93AA2880AC52005A9253 /* FirebaseStorage */,
+			);
 			productName = TitritShop;
 			productReference = 8B7A600E286A417400AB5095 /* Titrit Shop.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 8B7A6005286A417400AB5095;
+			packageReferences = (
+				8BAC93A32880AC52005A9253 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8B7A600F286A417400AB5095 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B90E46F286CC0BD006B371E /* LaunchScreen.storyboard in Resources */,
+				8BAC93AF2880B30E005A9253 /* GoogleService-Info.plist in Resources */,
 				8B7A6019286A417400AB5095 /* Preview Assets.xcassets in Resources */,
 				8B7A6016286A417400AB5095 /* Assets.xcassets in Resources */,
 			);
@@ -242,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4BBFEA2881FA4C0022C96D /* AuthViewModel.swift in Sources */,
 				8B7A6024286A4A2500AB5095 /* AnySource.swift in Sources */,
 				8B7A603D286B775700AB5095 /* cartButton.swift in Sources */,
 				8B7A6028286A5CCF00AB5095 /* ImageRequest.swift in Sources */,
@@ -251,6 +285,8 @@
 				8B90E46D286C06DD006B371E /* PayementButton.swift in Sources */,
 				8B7A6026286A530500AB5095 /* NetworkingRequest.swift in Sources */,
 				8B7A6042286B9DCF00AB5095 /* CartViewModel.swift in Sources */,
+				8BAC939E287DF6E0005A9253 /* RegisterView.swift in Sources */,
+				8BAC93A0287E13D2005A9253 /* SignInView.swift in Sources */,
 				8B7A6014286A417400AB5095 /* ContentView.swift in Sources */,
 				8B7A6035286A9C7F00AB5095 /* ProductCard.swift in Sources */,
 				8B7A603F286B837800AB5095 /* CartView.swift in Sources */,
@@ -258,6 +294,7 @@
 				8B7A6039286A9D3100AB5095 /* ImageCach.swift in Sources */,
 				8B7A6032286A89AE00AB5095 /* ProductRequest.swift in Sources */,
 				8B7A6012286A417400AB5095 /* TitritShopApp.swift in Sources */,
+				8B4BBFEC28822FE00022C96D /* ProfileView.swift in Sources */,
 				8B7A602A286A615800AB5095 /* ModelRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +496,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BAC93A32880AC52005A9253 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BAC93A42880AC52005A9253 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BAC93A32880AC52005A9253 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8BAC93A62880AC52005A9253 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BAC93A32880AC52005A9253 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8BAC93A82880AC52005A9253 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BAC93A32880AC52005A9253 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		8BAC93AA2880AC52005A9253 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BAC93A32880AC52005A9253 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B7A6006286A417400AB5095 /* Project object */;
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+   
+    @Environment(\.presentationMode) var presentationMode
     @State var products = [Product]()
     
     @StateObject var carViewModel = CartViewModel()
@@ -16,6 +18,9 @@ struct ContentView: View {
     var quantity: Int = 0
     
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    
+    @Binding var rootIsActive: Bool
+    
     
     var body: some View {
         
@@ -41,16 +46,26 @@ struct ContentView: View {
                 }
                 .navigationTitle("TiTriT Shop")
                 .toolbar {
-                    NavigationLink {
-                        CartView()
-                            .environmentObject(carViewModel)
-                    } label: {
-                        cartButton()
-                            .environmentObject(carViewModel)
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink {
+                            CartView()
+                                .environmentObject(carViewModel)
+                        } label: {
+                            cartButton()
+                                .environmentObject(carViewModel)
+                        }
                     }
-                    
-                    
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        NavigationLink {
+                            ProfileView(shouldPopToRootView: self.$rootIsActive)
+                        } label: {
+                            Image(systemName: "person")
+                        }
+                        .isDetailLink(false)
+                    }
+                   
                 }
+                
             
         }
         .navigationViewStyle(StackNavigationViewStyle())
@@ -60,7 +75,8 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    @State static var value = false
     static var previews: some View {
-        ContentView()
+        ContentView(rootIsActive: $value)
     }
 }
