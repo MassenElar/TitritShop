@@ -50,7 +50,7 @@ struct ProductCard: View {
             } label: {
                 Image(systemName: "plus")
                     .padding(10)
-                    .background(.black)
+                    .background(Color("buttonColor"))
                     .foregroundColor(.white)
                     .cornerRadius(50)
                     .padding(6)

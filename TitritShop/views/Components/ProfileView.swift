@@ -13,7 +13,7 @@ struct ProfileView: View {
     
     @State var fullname: String = ""
     @State var email: String = ""
-    @Binding var shouldPopToRootView : Bool
+    @Binding var viewIsPersent : Bool
     var authViewModel = AuthViewModel()
     
     var body: some View {
@@ -25,9 +25,9 @@ struct ProfileView: View {
                 
             VStack {
                 Button {
-                    if self.authViewModel.logOut() {
-                        self.shouldPopToRootView = false
-                    }
+                    self.authViewModel.logOut()
+                    self.viewIsPersent = false
+                    
                 } label: {
                     Text("Logout")
                         .foregroundColor(.white)
@@ -63,6 +63,6 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     @State static var value = true
     static var previews: some View {
-        ProfileView(shouldPopToRootView: $value)
+        ProfileView(viewIsPersent: $value)
     }
 }

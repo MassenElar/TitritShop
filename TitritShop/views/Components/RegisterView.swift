@@ -59,7 +59,10 @@ struct RegisterView: View {
                             .stroke()
                         )
                         .padding(5)
-                    Button(action: { self.authViewModel.register(email: email, password: password, confirmPass: confrimPassword, fullName: fullName)}) {
+                    Button(action: {
+                        self.authViewModel.register(email: email, password: password, confirmPass: confrimPassword, fullName: fullName)
+                        self.deinitInputs()
+                    }) {
                         Text("Register")
                             .padding()
                             .foregroundColor(.white)
@@ -97,6 +100,13 @@ struct RegisterView: View {
         .fullScreenCover(isPresented: $viewIsPresente) {
             ContentView(rootIsActive: $viewIsPresente)
         }
+    }
+    
+    func deinitInputs() {
+            self.email = ""
+            self.password = ""
+            self.fullName = ""
+            self.confrimPassword = ""
     }
 }
     

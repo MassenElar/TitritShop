@@ -57,11 +57,14 @@ struct ContentView: View {
                     }
                     ToolbarItem(placement: .navigationBarLeading) {
                         NavigationLink {
-                            ProfileView(shouldPopToRootView: self.$rootIsActive)
+                            ProfileView(viewIsPersent: self.$rootIsActive)
                         } label: {
                             Image(systemName: "person")
+                                .foregroundColor(.black)
+                                
                         }
                         .isDetailLink(false)
+                        .foregroundColor(.black)
                     }
                    
                 }
@@ -69,6 +72,8 @@ struct ContentView: View {
             
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .accentColor(.black)
+    
     }
     
     
